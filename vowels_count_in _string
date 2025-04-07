@@ -1,0 +1,17 @@
+def count_vowels(s:str):
+  vowels = ['a','e','i','o','u']
+  count = 0
+  for ele in s.lower():
+    if ele in vowels:
+      count += 1
+  return count
+
+
+test_case1 = count_vowels("Artificial")
+print(f"vowels count :{test_case1}")
+
+test_case2 = count_vowels("GEN AI")
+print(f"vowels count :{test_case2}")
+
+test_case3 = count_vowels("the quick brown fox jumps.")
+print(f"vowels count :{test_case3}")
