@@ -1,0 +1,16 @@
+# word count in string
+def word_count(s):
+  word_counter ={}
+  for ele in s.lower().split():
+    if ele in word_counter:
+      word_counter[ele] +=1
+    else:
+      word_counter[ele] =1
+
+  return word_counter 
+
+testcase1 = "AI is the future and ai is powerful"
+print(word_count(testcase1))
+
+testcase2 = "Hello hello HELLO"
+print(word_count(testcase2))
