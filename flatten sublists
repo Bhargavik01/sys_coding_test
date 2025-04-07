@@ -1,0 +1,12 @@
+def flaten_list(nested : list):
+  output =[]
+  for ele in nested:
+    if isinstance(ele, list):
+      #handle subliist stuff
+      output.extend(flaten_list(ele))
+    else:
+      output.append(ele)
+  return output    
+
+test1 = [1,[2,3],4,[5,6,7]]
+print(flaten_list(test1))
