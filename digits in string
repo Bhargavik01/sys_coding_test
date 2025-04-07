@@ -1,0 +1,13 @@
+# digits in string
+
+def extract_digits(s:str):
+  output = []
+  for ele in s:
+    if ele.isdigit():
+      output.append(int(ele))
+  return output
+
+
+print(extract_digits("abc1234xyz"))
+print(extract_digits("no digits"))
+print(extract_digits("007bound"))
