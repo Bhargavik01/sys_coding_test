@@ -1,0 +1,18 @@
+def sum_top_scores(data:dict, sub , threshold):
+  subject_sum =0
+  for ele,subject  in data.values():
+    if subject['sub']>threshold:
+      subject_sum += subject['sub']
+  print(subject_sum)
+
+
+d ={
+    "john" :{'math':85 ,"science" : 72},
+    "amy" : {'math':45 ,"science" : 90},
+    "mark" : {'math':92 ,"science" : 66},
+}
+
+subject ="math"
+threshold =80
+
+print(sum_top_scores(d, subject ,threshold))
