@@ -1,0 +1,8 @@
+# closest sum
+
+def closest_sum(li, target):
+  n= len(li)
+  sum_dict ={}
+
+  for ele in range(n-2):
+    suum= li[ele]+li[ele+1]+li[ele+2]
