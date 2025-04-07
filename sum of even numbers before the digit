@@ -1,0 +1,14 @@
+# sum of even numbers before the digit
+
+def sum_even_numbers(n:int):
+  even_values_sum = sum([ele for ele in range(n+1) if ele % 2 == 0])
+  return even_values_sum
+
+test_case1 = sum_even_numbers(10)  
+print(test_case1)
+
+test_case2 = sum_even_numbers(5)  
+print(test_case2)
+
+test_case3 = sum_even_numbers(1)  
+print(test_case3)
